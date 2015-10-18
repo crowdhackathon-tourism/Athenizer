@@ -1,0 +1,22 @@
+create database CityBreak;
+
+use CityBreak;
+
+create table users(
+custno int NOT NULL AUTO_INCREMENT,
+fname text,
+lname text,
+email text,
+age text,
+sex text,
+disability text,
+budget text,
+season text,
+interest text,
+revisited text,
+eating text,
+people text,
+arrival text,
+departure text,
+credit text,
+PRIMARY KEY (custno ));

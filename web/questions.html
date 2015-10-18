@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Informations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            fieldset 
+            {
+                background:LightGoldenRodYellow;
+                border-color:yellow;
+                border-width:3px;
+                border-style: solid;
+                margin-bottom:10px;
+                width:720px;
+            }
+
+            label 
+            {
+                width:300px;
+                display:inline-block;
+                text-align:right-align;
+                text-align:top-align;
+            }
+            textarea
+            {
+                width:360px;
+                height:50px;
+            }
+        </style>
+
+    </head>
+    <body style="background-color:lightgrey">
+        <img src="ATHENIZER.png"><br>
+        <h1>Personal Information!</h1>
+        <div>
+            <form name="questions" method="post" action="process.jsp">
+                <fieldset>
+                    <legend>Give us some informations about you.</legend>
+                    
+                    <label>What's your age group?</label><br>
+                    <input type="radio" name="age" value="18-30">18-30<br>
+                    <input type="radio" name="age" value="31-50">31-50<br>
+                    <input type="radio" name="age" value="51-75">51-75<br><br>
+
+                    <label>What's your gender?</label><br>
+                    <input type="radio" name="sex" value="Male">Male<br>
+                    <input type="radio" name="sex" value="Female">Female<br>
+                    <input type="radio" name="sex" value="Another">Another<br><br>
+
+                    <label>Do you have a mobile disability?</label><br>
+                    <input type="radio" name="disability" value="Yes">Yes<br>
+                    <input type="radio" name="disability" value="No">No<br><br>
+
+                    <label>What's your budget?</label><br>
+                    <input type="radio" name="budget" value="Low">Low<br>
+                    <input type="radio" name="budget" value="Medium">Medium<br>
+                    <input type="radio" name="budget" value="High">High<br><br>
+
+                    <label>When do you plan to visit Athens?</label><br>
+                    <input type="radio" name="season" value="January-March">January-March<br>
+                    <input type="radio" name="season" value="April-June">April-June<br>
+                    <input type="radio" name="season" value="July-September">July-September<br>
+                    <input type="radio" name="season" value="October-December">October-December<br><br>
+
+                    <label>Why do you come to Athens?</label><br>
+                    <input type="radio" name="interest" value="Arts & Culture">Arts & Culture<br>
+                    <input type="radio" name="interest" value="Environment">Environment<br>
+                    <input type="radio" name="interest" value="Gastronomy">Gastronomy<br>
+                    <input type="radio" name="interest" value="Night life">Night life<br>
+                    <input type="radio" name="interest" value="Trends & Style">Trends & Style<br>
+                    <input type="radio" name="interest" value="Sports">Sports<br><br>
+
+                    <label>Have you been here before?</label><br>
+                    <input type="radio" name="revisited" value="Yes">Yes<br>
+                    <input type="radio" name="revisited" value="No">No<br><br>
+                    
+                    <label>What are your eating preferences?</label><br>
+                    <input type="radio" name="eating" value="Normal eater">Normal eater<br>
+                    <input type="radio" name="eating" value="Vegetarian">Vegetarian<br>
+                    <input type="radio" name="eating" value="Vegan">Vegan<br><br>
+
+                    <label>You are traveling:</label><br>
+                    <input type="radio" name="people" value="Single">Single?<br>
+                    <input type="radio" name="people" value="Couple">Couple?<br>
+                    <input type="radio" name="people" value="Family">Family?<br><br>
+
+                    <label>What time are you planning to arrive?</label><br>
+                    <input type="radio" name="arrival" value="Morning">Morning<br>
+                    <input type="radio" name="arrival" value="Evening">Evening<br>
+                    <input type="radio" name="arrival" value="Night">Night<br><br>
+
+                    <label>What time do you departure?</label><br>
+                    <input type="radio" name="departure" value="Morning">Morning<br>
+                    <input type="radio" name="departure" value="Evening">Evening<br>
+                    <input type="radio" name="departure" value="Night">Night<br><br>
+                    
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
